@@ -1,5 +1,5 @@
 
-import axios from "../api/axios";
+import axios from "../../api/axios";
 
 export const getDatabase = async () => {
     const response = await axios.get("/database");
