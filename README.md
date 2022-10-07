@@ -14,20 +14,61 @@
   ```
 
 - Redux
+
   ```shell
   npm i @reduxjs/toolkit
   npm i react-redux
   ```
+
 - Axios
-- Github
-- Material Ui
-- localstorage
+
+  ```shell
+  npm i axios
+  ```
+
 - Json-server
+
+  ```shell
+  npm i json-server
+  ```
+
+  create in the root of you project a db.json file and populate it with:
+
+  ```json
+  {
+    "database": {
+      "dataStr": "data1",
+      "dataArr": ["data2", "data3", "data4"],
+      "dataObj": {
+        "data5": "data5",
+        "data6": "data6",
+        "data7": "data7"
+      }
+    }
+  }
+  ```
+
+  go to package.json and add:
+
+  ```json
+  "server": "json-server -p8010 --w db.json"
+  ```
+
+  make sure that this port 8010 is the same in the file api/axios.js line 4
+
+- Material Ui
+  ```shell
+  npm install @mui/material @emotion/react @emotion/styled
+  ```
+- Github
+
+- localstorage
 
 ## Data from:
 
 - Restcountries: https://restcountries.com/v3.1/
 - Openweathermap: https://openweathermap.org
+- pokeApi
 
 ## Images & videos from:
 
@@ -47,6 +88,12 @@
 - cd into it
 - npm i
 - npm start
+
+if you are using the local server open a new terminal in your IDE and type:
+
+```shell
+  npm run server
+```
 
 ## check it OnLine:
 

@@ -1,6 +1,11 @@
 {
-    "database":{
-        "data1":"This is data 1",
-        "data2":"this is data 2"
-    }
+    "database": {
+        "dataStr": "data1",
+        "dataArr": ["data2", "data3", "data4"],
+        "dataObj": {
+            "data5": "data5",
+            "data6": "data6",
+            "data7": "data7"
+        }
+    } 
 }
